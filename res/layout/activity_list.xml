@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/tvStanje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivStanje"
+        android:layout_alignRight="@+id/tvRucno"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="41dp"
+        android:text="0.0000 KM" />
+
+    <ListView
+        android:id="@+id/lvLista"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvStanje"
+        android:layout_marginTop="100dp"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="4dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/list_selector"
+        android:divider="@drawable/list_divider"
+        android:padding="2dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/ivStanje"
+        android:layout_width="102dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/money" />
+
+    <TextView
+        android:id="@+id/tvRucno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivStanje"
+        android:layout_marginRight="16dp"
+        android:text="Trenutni iznos na vašem računu:"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

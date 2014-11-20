@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="horizontal" >
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:text="Dobrodošli u e-banku"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        android:typeface="serif" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="213dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:hint="korisničko ime"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="sans" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="211px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="šifra"
+        android:password="true"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="sans" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="211px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="****"
+        android:password="true"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="sans" >
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Zapamti me"
+        android:textStyle="italic" >
+    </CheckBox>
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="141px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif" >
+    </Button>
+    
+      <TextView
+        android:id="@+id/tvError"
+        android:layout_width="400dip"
+        android:layout_height="100dip"
+        android:textSize="7pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bLogin"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="120dip"
+        android:textColor="#AA0000"
+        android:text=""/>
+
+</RelativeLayout>
